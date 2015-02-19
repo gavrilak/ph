@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0D796B8B-D309-4A6D-B55F-5DD99D412984</string>
+	<key>IDESourceControlProjectName</key>
+	<string>psycho</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>EE1B85EA417E790548F831A68D69971F50BB7DD7</key>
+		<string>https://github.com/gavrilak/ph.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>psycho.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>EE1B85EA417E790548F831A68D69971F50BB7DD7</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/gavrilak/ph.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>EE1B85EA417E790548F831A68D69971F50BB7DD7</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EE1B85EA417E790548F831A68D69971F50BB7DD7</string>
+			<key>IDESourceControlWCCName</key>
+			<string>psycho</string>
+		</dict>
+	</array>
+</dict>
+</plist>

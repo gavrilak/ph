@@ -14,6 +14,9 @@
 		BFCE5F571A96004B0063E404 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFCE5F561A96004B0063E404 /* Images.xcassets */; };
 		BFCE5F5A1A96004B0063E404 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFCE5F581A96004B0063E404 /* LaunchScreen.xib */; };
 		BFCE5F661A96004B0063E404 /* psychoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCE5F651A96004B0063E404 /* psychoTests.m */; };
+		BFCE5F721A9643BA0063E404 /* result1.json in Resources */ = {isa = PBXBuildFile; fileRef = BFCE5F701A9643BA0063E404 /* result1.json */; };
+		BFCE5F731A9643BA0063E404 /* test1.json in Resources */ = {isa = PBXBuildFile; fileRef = BFCE5F711A9643BA0063E404 /* test1.json */; };
+		BFCE5F781A964A590063E404 /* resultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCE5F771A964A590063E404 /* resultViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,10 @@
 		BFCE5F5F1A96004B0063E404 /* psychoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = psychoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFCE5F641A96004B0063E404 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFCE5F651A96004B0063E404 /* psychoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = psychoTests.m; sourceTree = "<group>"; };
+		BFCE5F701A9643BA0063E404 /* result1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = result1.json; path = psycho/files/result1.json; sourceTree = "<group>"; };
+		BFCE5F711A9643BA0063E404 /* test1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = test1.json; path = psycho/files/test1.json; sourceTree = "<group>"; };
+		BFCE5F761A964A590063E404 /* resultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = resultViewController.h; path = psycho/ViewControllers/resultViewController.h; sourceTree = "<group>"; };
+		BFCE5F771A964A590063E404 /* resultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = resultViewController.m; path = psycho/ViewControllers/resultViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +70,8 @@
 		BFCE5F3D1A96004B0063E404 = {
 			isa = PBXGroup;
 			children = (
+				BFCE5F751A964A2C0063E404 /* controllers */,
+				BFCE5F6F1A9643AC0063E404 /* files */,
 				BFCE5F481A96004B0063E404 /* psycho */,
 				BFCE5F621A96004B0063E404 /* psychoTests */,
 				BFCE5F471A96004B0063E404 /* Products */,
@@ -117,6 +126,24 @@
 				BFCE5F641A96004B0063E404 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BFCE5F6F1A9643AC0063E404 /* files */ = {
+			isa = PBXGroup;
+			children = (
+				BFCE5F701A9643BA0063E404 /* result1.json */,
+				BFCE5F711A9643BA0063E404 /* test1.json */,
+			);
+			name = files;
+			sourceTree = "<group>";
+		};
+		BFCE5F751A964A2C0063E404 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BFCE5F761A964A590063E404 /* resultViewController.h */,
+				BFCE5F771A964A590063E404 /* resultViewController.m */,
+			);
+			name = controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,8 +226,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFCE5F721A9643BA0063E404 /* result1.json in Resources */,
 				BFCE5F551A96004B0063E404 /* Main.storyboard in Resources */,
 				BFCE5F5A1A96004B0063E404 /* LaunchScreen.xib in Resources */,
+				BFCE5F731A9643BA0063E404 /* test1.json in Resources */,
 				BFCE5F571A96004B0063E404 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,6 +250,7 @@
 			files = (
 				BFCE5F521A96004B0063E404 /* ViewController.m in Sources */,
 				BFCE5F4F1A96004B0063E404 /* AppDelegate.m in Sources */,
+				BFCE5F781A964A590063E404 /* resultViewController.m in Sources */,
 				BFCE5F4C1A96004B0063E404 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

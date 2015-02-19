@@ -19,7 +19,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dYe-aP-e1i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-325" y="393"/>
+            <point key="canvasLocation" x="1245" y="-175"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="wd7-l4-373">
@@ -86,7 +86,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nyS-eC-s0V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="368" y="393"/>
+            <point key="canvasLocation" x="308" y="359"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="o0O-qu-GPo">
@@ -112,7 +112,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="kpd-IV-Zu7" kind="presentation" id="DTD-L2-MZ8"/>
+                                    <segue destination="U0U-ru-AVm" kind="show" id="OFU-kJ-cmg"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="beK-OO-b9e">
@@ -144,7 +144,46 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4tM-25-8Ib" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1038" y="393"/>
+            <point key="canvasLocation" x="1092" y="569"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="pJ9-Yv-K8o">
+            <objects>
+                <viewController id="U0U-ru-AVm" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bup-MC-Sxb"/>
+                        <viewControllerLayoutGuide type="bottom" id="LPW-jp-iF2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="L7K-e8-nbX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7s7-lu-Be8">
+                                <rect key="frame" x="151" y="285" width="89" height="30"/>
+                                <state key="normal" title="Мужской">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="kpd-IV-Zu7" kind="presentation" id="gTa-KV-58E"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdv-tv-gme">
+                                <rect key="frame" x="344" y="285" width="86" height="30"/>
+                                <state key="normal" title="Женский">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="kpd-IV-Zu7" kind="presentation" id="Jq6-tG-q2O"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.82550370070000001" blue="0.57211143090000005" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="WeZ-ko-qjx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H9b-a5-t5q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1794" y="557"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="0WJ-fi-tnn">
@@ -248,7 +287,83 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PYs-4u-xys" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1736" y="393"/>
+            <point key="canvasLocation" x="2476" y="381"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="NOE-zW-hTr">
+            <objects>
+                <viewController id="3xL-Ze-i86" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AaS-6R-0pG"/>
+                        <viewControllerLayoutGuide type="bottom" id="0IB-kg-rmq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NXG-Tl-hHd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bN7-Gx-lfD">
+                                <rect key="frame" x="37" y="114" width="542" height="163"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WYY-vz-80G">
+                                <rect key="frame" x="40" y="323" width="539" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKC-pO-cWb">
+                                <rect key="frame" x="279" y="72" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vT9-dC-tX3">
+                                <rect key="frame" x="16" y="9" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Dw5-ma-2FJ" kind="presentation" id="c8m-JK-UYC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.82550370070000001" blue="0.57211143090000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="bN7-Gx-lfD" firstAttribute="leading" secondItem="NXG-Tl-hHd" secondAttribute="leadingMargin" constant="21" id="0dM-rf-Ahr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bN7-Gx-lfD" secondAttribute="trailing" constant="5" id="8Ox-nU-z40"/>
+                            <constraint firstItem="WYY-vz-80G" firstAttribute="top" secondItem="bN7-Gx-lfD" secondAttribute="bottom" constant="46" id="COg-mo-ImY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WYY-vz-80G" secondAttribute="trailing" constant="5" id="IIy-W3-Hry"/>
+                            <constraint firstItem="bN7-Gx-lfD" firstAttribute="top" secondItem="UKC-pO-cWb" secondAttribute="bottom" constant="21" id="ONt-IB-bTS"/>
+                            <constraint firstItem="WYY-vz-80G" firstAttribute="leading" secondItem="NXG-Tl-hHd" secondAttribute="leadingMargin" constant="24" id="S1K-Ta-NIA"/>
+                            <constraint firstItem="bN7-Gx-lfD" firstAttribute="leading" secondItem="NXG-Tl-hHd" secondAttribute="leadingMargin" constant="21" id="c2T-IM-6ij"/>
+                            <constraint firstAttribute="centerX" secondItem="UKC-pO-cWb" secondAttribute="centerX" id="dI6-vb-ga4"/>
+                            <constraint firstItem="bN7-Gx-lfD" firstAttribute="top" secondItem="AaS-6R-0pG" secondAttribute="bottom" constant="94" id="kbO-L5-vT0"/>
+                            <constraint firstItem="vT9-dC-tX3" firstAttribute="top" secondItem="NXG-Tl-hHd" secondAttribute="topMargin" constant="9" id="mcQ-uF-lsI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bN7-Gx-lfD" secondAttribute="trailing" constant="5" id="oFP-JU-xCk"/>
+                            <constraint firstItem="vT9-dC-tX3" firstAttribute="leading" secondItem="NXG-Tl-hHd" secondAttribute="leadingMargin" id="rHA-Yb-D7n"/>
+                            <constraint firstItem="UKC-pO-cWb" firstAttribute="top" secondItem="AaS-6R-0pG" secondAttribute="bottom" constant="52" id="sJB-Vh-mdl"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="8Ox-nU-z40"/>
+                                <exclude reference="c2T-IM-6ij"/>
+                                <exclude reference="kbO-L5-vT0"/>
+                                <exclude reference="COg-mo-ImY"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cBV-QW-rod" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3165" y="387"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="c8m-JK-UYC"/>
+        <segue reference="gTa-KV-58E"/>
+    </inferredMetricsTieBreakers>
 </document>
