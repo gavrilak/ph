@@ -17,13 +17,27 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    UIGraphicsBeginImageContext(self.view.frame.size);
+    [[UIImage imageNamed:@"bg.png"] drawInRect:self.view.bounds];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    self.view.backgroundColor = [UIColor colorWithPatternImage:image];
+    self.navigationController.navigationBar.topItem.title = @"";
+    [self.navigationController.topViewController setTitle: @"info"];
+//setTitle:@"Tecт1"
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+- (IBAction)maleAction:(id)sender {
+    
+}
+- (IBAction)femaleAction:(id)sender {
+    
+}
 /*
 #pragma mark - Navigation
 

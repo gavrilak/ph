@@ -10,4 +10,7 @@
 
 @interface DSSelectSexViewController : UIViewController
 
+- (IBAction)maleAction:(id)sender;
+- (IBAction)femaleAction:(id)sender;
+
 @end

@@ -24,7 +24,8 @@
     
     
     self.view.backgroundColor = [UIColor colorWithPatternImage:image];
-    
+    self.navigationController.navigationBar.topItem.title = @"";
+     [self.navigationController.topViewController setTitle: @"Тест №1"];
 
 }
 
