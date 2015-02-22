@@ -10,12 +10,16 @@
 
 @interface DSTestManager : NSObject
 
+@property (strong, nonatomic) NSString *name;
 @property (strong, nonatomic) NSMutableArray *jsonQuestion;
 @property (strong, nonatomic) NSMutableArray *jsonResult;
 @property (strong, nonatomic) NSString *qwName;
 @property (strong, nonatomic) NSString *resultName;
+@property (assign, nonatomic) NSUInteger indexQW;
 
 + (DSTestManager *)sharedManager;
-void getTest();
+
+-(void) getTest;
+-(NSString*) nextQuestion;
 
 @end

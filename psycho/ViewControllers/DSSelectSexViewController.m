@@ -7,6 +7,7 @@
 //
 
 #import "DSSelectSexViewController.h"
+#import "DSTestManager.h"
 
 @interface DSSelectSexViewController ()
 
@@ -25,7 +26,7 @@
     self.view.backgroundColor = [UIColor colorWithPatternImage:image];
     self.navigationController.navigationBar.topItem.title = @"";
     [self.navigationController.topViewController setTitle: @"info"];
-//setTitle:@"Tecт1"
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,10 +34,11 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)maleAction:(id)sender {
-    
+    [DSTestManager sharedManager].resultName = [[DSTestManager sharedManager].resultName stringByAppendingString:@"m"];
+    [[DSTestManager sharedManager] getTest];
 }
 - (IBAction)femaleAction:(id)sender {
-    
+    [DSTestManager sharedManager].resultName = [[DSTestManager sharedManager].resultName stringByAppendingString:@"f"];
 }
 /*
 #pragma mark - Navigation

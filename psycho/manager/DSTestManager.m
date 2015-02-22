@@ -32,6 +32,16 @@
     filePath = [[NSBundle mainBundle] pathForResource:self.resultName ofType:@"json"];
     data = [NSData dataWithContentsOfFile:filePath];
     self.jsonResult = [NSMutableArray arrayWithArray:[NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&error]];
+    self.indexQW = 0;
+}
+
+-(NSString*) nextQuestion{
+    NSString* qw;
+    
+    qw = [[self.jsonQuestion objectAtIndex:self.indexQW] objectForKey:@"QW"];
+    self.indexQW++;
+    
+    return qw;
 }
 
 @end
