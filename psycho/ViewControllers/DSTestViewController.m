@@ -69,7 +69,7 @@
         [self.labelCurent setText: [NSString stringWithFormat:@"%d",[DSTestManager sharedManager].indexQW]];
       //  NSLog (@"%f, %f",self.labelAllQuestion.frame.size.width,self.labelAllQuestion.frame.origin.x );
       //  if  (self.currentLabelLeft.constant + self.labelCurent.frame.size.width < self.labelAllQuestion.frame.origin.x - self.labelAllQuestion.frame.size.width) {
-        if (self.progress.progress < 0.95){
+        if (self.progress.progress < 0.94){
             self.currentLabelLeft.constant += (self.view.bounds.size.width - self.labelCurent.frame.size.width - self.labelAllQuestion.frame.size.width)/ [[DSTestManager sharedManager].jsonQuestion count];
         }
         else {

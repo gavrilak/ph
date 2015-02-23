@@ -39,6 +39,7 @@
 }
 - (IBAction)femaleAction:(id)sender {
     [DSTestManager sharedManager].resultName = [[DSTestManager sharedManager].resultName stringByAppendingString:@"f"];
+     //[[DSTestManager sharedManager] getTest];
 }
 /*
 #pragma mark - Navigation
