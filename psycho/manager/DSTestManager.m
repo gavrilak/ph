@@ -70,10 +70,16 @@
     NSArray *array = [result componentsSeparatedByString:@","];
     NSInteger bal = 0;
     for (NSString* id in array ) {
-       bal+= [[self.resultArray objectAtIndex:([id integerValue] -1)] integerValue];
+        if ([id integerValue]-1  <  [self.jsonQuestion count] )
+            bal+= [[self.resultArray objectAtIndex:([id integerValue] -1)] integerValue];
+        else
+            NSLog(@"invalid id ");
     }
     switch (bal) {
-            
+         
+        case 0:
+        case 1:
+        case 2:
         case 3:
         case 4:
         case 5:
