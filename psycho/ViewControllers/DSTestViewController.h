@@ -24,6 +24,9 @@
 @property (strong, nonatomic) IBOutlet UIProgressView *progress;
 
 
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *currentLabelLeft;
+
+
 - (IBAction)yesAction:(id)sender;
 - (IBAction)noAction:(id)sender;
 - (IBAction)maybeYesAction:(id)sender;

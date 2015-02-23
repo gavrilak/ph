@@ -13,13 +13,20 @@
 @property (strong, nonatomic) NSString *name;
 @property (strong, nonatomic) NSMutableArray *jsonQuestion;
 @property (strong, nonatomic) NSMutableArray *jsonResult;
+@property (strong, nonatomic) NSMutableArray *resultArray;
 @property (strong, nonatomic) NSString *qwName;
 @property (strong, nonatomic) NSString *resultName;
 @property (assign, nonatomic) NSUInteger indexQW;
+@property (assign, nonatomic) NSUInteger indexResult;
 
 + (DSTestManager *)sharedManager;
 
 -(void) getTest;
--(NSString*) nextQuestion;
+-(NSString*) nextQuestion:(NSNumber*) result;
+-(NSString*)  getResult ;
+-(NSString*)  getName ;
+-(NSString*)  getDecsription ;
+-(BOOL) backResult ;
+-(BOOL) nextResult;
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "DSResultTestViewController.h"
+#import "DSTestManager.h"
 
 @interface DSResultTestViewController ()
 
@@ -24,11 +25,36 @@
     UIGraphicsEndImageContext();
     
     self.view.backgroundColor = [UIColor colorWithPatternImage:image];
+    [self getText];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+
+- (IBAction)backAction:(id)sender{
+    if ([[DSTestManager sharedManager] backResult])
+        [self getText];
+    
+}
+- (IBAction)forwardAction:(id)sender{
+    if ([[DSTestManager sharedManager] nextResult])
+        [self getText];
+    
+}
+- (IBAction)shareAction:(id)sender{
+    
+}
+
+-(void) getText{
+    
+    self.labelTitle.text = [[DSTestManager sharedManager] getName];
+    self.smallText.text = [[DSTestManager sharedManager] getDecsription];
+    self.bigText.text = [[DSTestManager sharedManager] getResult];
+    
 }
 
 /*
