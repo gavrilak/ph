@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3202F10D1A993C8600B59662 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3202F10C1A993C8600B59662 /* Entitlements.plist */; };
+		BFB78B531A9DE3D300B35F5B /* button_share_s@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFB78B511A9DE3D300B35F5B /* button_share_s@3x.png */; };
+		BFB78B541A9DE3D300B35F5B /* button_share@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFB78B521A9DE3D300B35F5B /* button_share@3x.png */; };
 		BFCA25511A973B7300B1632D /* DSSelectTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCA25501A973B7300B1632D /* DSSelectTestViewController.m */; };
 		BFCA25541A973B9C00B1632D /* DSConfirmTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCA25531A973B9C00B1632D /* DSConfirmTestViewController.m */; };
 		BFCA25571A973BBA00B1632D /* DSSelectSexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCA25561A973BBA00B1632D /* DSSelectSexViewController.m */; };
@@ -33,6 +35,7 @@
 		BFCA258F1A976E0D00B1632D /* logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFCA257D1A976E0D00B1632D /* logo@3x.png */; };
 		BFCA25901A976E0D00B1632D /* separator@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFCA257E1A976E0D00B1632D /* separator@3x.png */; };
 		BFCA25921A9791D000B1632D /* but_back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFCA25911A9791D000B1632D /* but_back@3x.png */; };
+		BFCE0C7A1A9E2F7400A9AEF3 /* UIView+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCE0C791A9E2F7400A9AEF3 /* UIView+Shake.m */; };
 		BFCE5F4C1A96004B0063E404 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCE5F4B1A96004B0063E404 /* main.m */; };
 		BFCE5F4F1A96004B0063E404 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCE5F4E1A96004B0063E404 /* AppDelegate.m */; };
 		BFCE5F521A96004B0063E404 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCE5F511A96004B0063E404 /* ViewController.m */; };
@@ -42,6 +45,7 @@
 		BFCE5F661A96004B0063E404 /* psychoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCE5F651A96004B0063E404 /* psychoTests.m */; };
 		BFCE5F721A9643BA0063E404 /* result1m.json in Resources */ = {isa = PBXBuildFile; fileRef = BFCE5F701A9643BA0063E404 /* result1m.json */; };
 		BFCE5F731A9643BA0063E404 /* test1.json in Resources */ = {isa = PBXBuildFile; fileRef = BFCE5F711A9643BA0063E404 /* test1.json */; };
+		BFD1F3861A9DCF2100B5EA5B /* DSLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD1F3851A9DCF2100B5EA5B /* DSLoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +60,8 @@
 
 /* Begin PBXFileReference section */
 		3202F10C1A993C8600B59662 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
+		BFB78B511A9DE3D300B35F5B /* button_share_s@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_share_s@3x.png"; sourceTree = "<group>"; };
+		BFB78B521A9DE3D300B35F5B /* button_share@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_share@3x.png"; sourceTree = "<group>"; };
 		BFCA254F1A973B7300B1632D /* DSSelectTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSSelectTestViewController.h; path = psycho/ViewControllers/DSSelectTestViewController.h; sourceTree = "<group>"; };
 		BFCA25501A973B7300B1632D /* DSSelectTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSSelectTestViewController.m; path = psycho/ViewControllers/DSSelectTestViewController.m; sourceTree = "<group>"; };
 		BFCA25521A973B9C00B1632D /* DSConfirmTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSConfirmTestViewController.h; path = psycho/ViewControllers/DSConfirmTestViewController.h; sourceTree = "<group>"; };
@@ -87,6 +93,8 @@
 		BFCA257D1A976E0D00B1632D /* logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@3x.png"; sourceTree = "<group>"; };
 		BFCA257E1A976E0D00B1632D /* separator@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "separator@3x.png"; sourceTree = "<group>"; };
 		BFCA25911A9791D000B1632D /* but_back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "but_back@3x.png"; sourceTree = "<group>"; };
+		BFCE0C781A9E2F7400A9AEF3 /* UIView+Shake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Shake.h"; sourceTree = "<group>"; };
+		BFCE0C791A9E2F7400A9AEF3 /* UIView+Shake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Shake.m"; sourceTree = "<group>"; };
 		BFCE5F461A96004B0063E404 /* psycho.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = psycho.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFCE5F4A1A96004B0063E404 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFCE5F4B1A96004B0063E404 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -102,6 +110,8 @@
 		BFCE5F651A96004B0063E404 /* psychoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = psychoTests.m; sourceTree = "<group>"; };
 		BFCE5F701A9643BA0063E404 /* result1m.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = result1m.json; path = psycho/files/result1m.json; sourceTree = "<group>"; };
 		BFCE5F711A9643BA0063E404 /* test1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = test1.json; path = psycho/files/test1.json; sourceTree = "<group>"; };
+		BFD1F3841A9DCF2100B5EA5B /* DSLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSLoginViewController.h; path = psycho/ViewControllers/DSLoginViewController.h; sourceTree = "<group>"; };
+		BFD1F3851A9DCF2100B5EA5B /* DSLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSLoginViewController.m; path = psycho/ViewControllers/DSLoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +170,8 @@
 		BFCA256C1A976E0D00B1632D /* buttons */ = {
 			isa = PBXGroup;
 			children = (
+				BFB78B511A9DE3D300B35F5B /* button_share_s@3x.png */,
+				BFB78B521A9DE3D300B35F5B /* button_share@3x.png */,
 				BFCA25911A9791D000B1632D /* but_back@3x.png */,
 				BFCA256D1A976E0D00B1632D /* but_info@3x.png */,
 				BFCA256E1A976E0D00B1632D /* but_info_big@3x.png */,
@@ -191,9 +203,20 @@
 			path = psycho/images/other;
 			sourceTree = "<group>";
 		};
+		BFCE0C771A9E2F7400A9AEF3 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				BFCE0C781A9E2F7400A9AEF3 /* UIView+Shake.h */,
+				BFCE0C791A9E2F7400A9AEF3 /* UIView+Shake.m */,
+			);
+			name = Category;
+			path = psycho/Category;
+			sourceTree = "<group>";
+		};
 		BFCE5F3D1A96004B0063E404 = {
 			isa = PBXGroup;
 			children = (
+				BFCE0C771A9E2F7400A9AEF3 /* Category */,
 				3202F10C1A993C8600B59662 /* Entitlements.plist */,
 				BFCA25621A97546600B1632D /* image */,
 				BFCA255E1A973EFE00B1632D /* manager */,
@@ -278,6 +301,8 @@
 				BFCA25591A973CE700B1632D /* DSTestViewController.m */,
 				BFCA255B1A973D0400B1632D /* DSResultTestViewController.h */,
 				BFCA255C1A973D0400B1632D /* DSResultTestViewController.m */,
+				BFD1F3841A9DCF2100B5EA5B /* DSLoginViewController.h */,
+				BFD1F3851A9DCF2100B5EA5B /* DSLoginViewController.m */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -374,9 +399,11 @@
 				BFCA25861A976E0D00B1632D /* button_begin@3x.png in Resources */,
 				BFCA258E1A976E0D00B1632D /* indicator@3x.png in Resources */,
 				BFCE5F721A9643BA0063E404 /* result1m.json in Resources */,
+				BFB78B541A9DE3D300B35F5B /* button_share@3x.png in Resources */,
 				BFCA25821A976E0D00B1632D /* but_info_big_s@3x.png in Resources */,
 				BFCE5F551A96004B0063E404 /* Main.storyboard in Resources */,
 				BFCA258D1A976E0D00B1632D /* frame_small@3x.png in Resources */,
+				BFB78B531A9DE3D300B35F5B /* button_share_s@3x.png in Resources */,
 				BFCA25851A976E0D00B1632D /* button@3x.png in Resources */,
 				BFCA25801A976E0D00B1632D /* but_info@3x.png in Resources */,
 				BFCA258A1A976E0D00B1632D /* button_for_test@3x.png in Resources */,
@@ -405,11 +432,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFCE5F521A96004B0063E404 /* ViewController.m in Sources */,
+				BFD1F3861A9DCF2100B5EA5B /* DSLoginViewController.m in Sources */,
 				BFCA25511A973B7300B1632D /* DSSelectTestViewController.m in Sources */,
 				BFCA255D1A973D0400B1632D /* DSResultTestViewController.m in Sources */,
 				BFCA25611A97411200B1632D /* DSTestManager.m in Sources */,
 				BFCE5F4F1A96004B0063E404 /* AppDelegate.m in Sources */,
 				BFCA255A1A973CE700B1632D /* DSTestViewController.m in Sources */,
+				BFCE0C7A1A9E2F7400A9AEF3 /* UIView+Shake.m in Sources */,
 				BFCA25541A973B9C00B1632D /* DSConfirmTestViewController.m in Sources */,
 				BFCE5F4C1A96004B0063E404 /* main.m in Sources */,
 				BFCA25571A973BBA00B1632D /* DSSelectSexViewController.m in Sources */,
@@ -489,7 +518,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -526,7 +555,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -9,6 +9,7 @@
 #import "DSSelectTestViewController.h"
 #import "DSTestManager.h"
 
+
 @interface DSSelectTestViewController ()
     
 @end
@@ -24,9 +25,14 @@
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
+    
+    if (self.navigationController== nil)
+        NSLog(@"sfs");
+    //    self navigationController  = [[UINavigationController alloc] initWithRootViewController:self];
+    
     self.view.backgroundColor = [UIColor colorWithPatternImage:image];
-   
-
+    self.navigationItem.hidesBackButton = YES;
+    [self.navigationController setNavigationBarHidden:NO animated:NO];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -41,7 +41,7 @@
 
 
 -(BOOL) backResult {
-    if (self.indexResult > 1){
+    if (self.indexResult >= 1){
         self.indexResult--;
         return YES;
     }

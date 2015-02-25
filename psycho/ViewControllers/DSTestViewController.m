@@ -9,6 +9,9 @@
 #import "DSTestViewController.h"
 #import "DSResultTestViewController.h"
 #import "DSTestManager.h"
+#import "DSSelectTestViewController.h"
+#import  "UIView+Shake.h"
+
 
 @interface DSTestViewController ()
 
@@ -18,7 +21,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     UIGraphicsBeginImageContext(self.view.frame.size);
     [[UIImage imageNamed:@"bg.png"] drawInRect:self.view.bounds];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
@@ -48,40 +50,53 @@
     
     NSString *text = [[DSTestManager sharedManager] nextQuestion:result];
     if (text!=nil) {
-        [UIView transitionWithView:self.text
-                      duration:0.3f
-                       options:UIViewAnimationOptionTransitionCrossDissolve
-                    animations:^{
-                        [self.text setText:text];
-
-                    } completion:NULL];
+  
     
-        [UIView transitionWithView: self.labelQuestion
-                      duration:0.3f
-                       options:UIViewAnimationOptionTransitionCrossDissolve
-                    animations:^{
-                        self.labelQuestion.text = [NSString stringWithFormat:@"Вопрос %d",[DSTestManager sharedManager].indexQW];
-
-                        
-                    } completion:NULL];
-    
+        [self.text setText:text];
+        
+        [self.text shake:2 withDelta:8  andSpeed:0.1 ];
+        [self changeAnimationLabel:self.labelQuestion withText:[NSString stringWithFormat:@"Вопрос %lu",(unsigned long)[DSTestManager sharedManager].indexQW]];
+         self.labelCurent.text= [NSString stringWithFormat:@"%lu",(unsigned long)[DSTestManager sharedManager].indexQW];
+        
         [self.progress setProgress:(float) [DSTestManager sharedManager].indexQW/[[DSTestManager sharedManager].jsonQuestion count] animated:YES];
-        [self.labelCurent setText: [NSString stringWithFormat:@"%d",[DSTestManager sharedManager].indexQW]];
-      //  NSLog (@"%f, %f",self.labelAllQuestion.frame.size.width,self.labelAllQuestion.frame.origin.x );
-      //  if  (self.currentLabelLeft.constant + self.labelCurent.frame.size.width < self.labelAllQuestion.frame.origin.x - self.labelAllQuestion.frame.size.width) {
-        if (self.progress.progress < 0.94){
-            self.currentLabelLeft.constant += (self.view.bounds.size.width - self.labelCurent.frame.size.width - self.labelAllQuestion.frame.size.width)/ [[DSTestManager sharedManager].jsonQuestion count];
-        }
-        else {
-            self.currentLabelLeft.constant += self.view.bounds.size.width;
-            [self.labelAllQuestion setText: [NSString stringWithFormat:@"%d",[DSTestManager sharedManager].indexQW]];
-        }
+        [self.view updateConstraintsIfNeeded];
+    
+        
+            if (self.progress.progress < 0.94){
+                [UIView animateWithDuration:0.1f animations:^{
+                    self.currentLabelLeft.constant += (self.view.bounds.size.width - self.labelCurent.frame.size.width - self.labelAllQuestion.frame.size.width)/ [[DSTestManager sharedManager].jsonQuestion count];
+                    [self.view layoutIfNeeded];
+                }];
+            }
+            else {
+                
+                self.currentLabelLeft.constant += self.view.bounds.size.width;
+                [self.labelAllQuestion setText: [NSString stringWithFormat:@"%lu",(unsigned long)[DSTestManager sharedManager].indexQW]];
+            }
+        
+
+       
     }
     else{
          [self performSegueWithIdentifier:@"result" sender:self];
 
     }
 }
+
+- (void) changeAnimationLabel:(UILabel*) label withText:(NSString*) text {
+    
+    [UIView transitionWithView: label
+                      duration:0.3f
+                       options:UIViewAnimationOptionTransitionCrossDissolve
+                    animations:^{
+                        label.text = text;
+                        
+                        
+                    } completion:NULL];
+
+    
+}
+
 - (IBAction)yesAction:(id)sender{
     
     [self nextQuestion:@1];

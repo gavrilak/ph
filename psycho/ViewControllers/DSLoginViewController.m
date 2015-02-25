@@ -1,33 +1,30 @@
 //
-//  DSConfirmTestViewController.m
+//  DSLoginViewController.m
 //  psycho
 //
-//  Created by Dima on 20.02.15.
+//  Created by Lena on 25.02.15.
 //  Copyright (c) 2015 bestappstudio. All rights reserved.
 //
 
-#import "DSConfirmTestViewController.h"
+#import "DSLoginViewController.h"
 
-@interface DSConfirmTestViewController ()
+@interface DSLoginViewController ()
 
 @end
 
-@implementation DSConfirmTestViewController
+@implementation DSLoginViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
     UIGraphicsBeginImageContext(self.view.frame.size);
     [[UIImage imageNamed:@"bg.png"] drawInRect:self.view.bounds];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
-    
 
     self.view.backgroundColor = [UIColor colorWithPatternImage:image];
-        self.navigationItem.hidesBackButton = NO;
-    self.navigationController.navigationBar.topItem.title = @"";
-     [self.navigationController.topViewController setTitle: @"Тест №1"];
-
+    self.navigationItem.rightBarButtonItem  = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"but_info.png"] style:UIBarButtonItemStylePlain target:self action: @selector(info)];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -35,6 +32,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+- (void) info {
+    
+}
 /*
 #pragma mark - Navigation
 
