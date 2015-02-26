@@ -99,12 +99,12 @@
 
 - (IBAction)yesAction:(id)sender{
     
-    [self nextQuestion:@1];
+    [self nextQuestion:@4];
 
 }
 - (IBAction)noAction:(id)sender{
     
-    [self nextQuestion:@2];
+    [self nextQuestion:@1];
 
 }
 - (IBAction)maybeYesAction:(id)sender{
@@ -114,7 +114,7 @@
 }
 - (IBAction)maybeNoAction:(id)sender{
     
-    [self nextQuestion:@4];
+    [self nextQuestion:@2];
     
 }
 

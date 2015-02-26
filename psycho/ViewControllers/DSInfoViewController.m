@@ -1,31 +1,28 @@
 //
-//  DSLoginViewController.m
+//  DSInfoViewController.m
 //  psycho
 //
-//  Created by Lena on 25.02.15.
+//  Created by Lena on 26.02.15.
 //  Copyright (c) 2015 bestappstudio. All rights reserved.
 //
 
-#import "DSLoginViewController.h"
 #import "DSInfoViewController.h"
 
-@interface DSLoginViewController ()
+@interface DSInfoViewController ()
 
 @end
 
-@implementation DSLoginViewController
+@implementation DSInfoViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
     UIGraphicsBeginImageContext(self.view.frame.size);
     [[UIImage imageNamed:@"bg.png"] drawInRect:self.view.bounds];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
-
+    
     self.view.backgroundColor = [UIColor colorWithPatternImage:image];
-    self.navigationItem.rightBarButtonItem  = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"but_info.png"] style:UIBarButtonItemStylePlain target:self action: @selector(info)];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,11 +31,9 @@
 }
 
 
-- (void) info {
-   
-  [self performSegueWithIdentifier:@"info" sender:self];
+- (IBAction)backAction:(id)sender {
     
-    
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 /*
 #pragma mark - Navigation

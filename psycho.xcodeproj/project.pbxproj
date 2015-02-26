@@ -46,6 +46,7 @@
 		BFCE5F721A9643BA0063E404 /* result1m.json in Resources */ = {isa = PBXBuildFile; fileRef = BFCE5F701A9643BA0063E404 /* result1m.json */; };
 		BFCE5F731A9643BA0063E404 /* test1.json in Resources */ = {isa = PBXBuildFile; fileRef = BFCE5F711A9643BA0063E404 /* test1.json */; };
 		BFD1F3861A9DCF2100B5EA5B /* DSLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD1F3851A9DCF2100B5EA5B /* DSLoginViewController.m */; };
+		BFD479951A9F2DBA008F1CC4 /* DSInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD479941A9F2DBA008F1CC4 /* DSInfoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +113,8 @@
 		BFCE5F711A9643BA0063E404 /* test1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = test1.json; path = psycho/files/test1.json; sourceTree = "<group>"; };
 		BFD1F3841A9DCF2100B5EA5B /* DSLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSLoginViewController.h; path = psycho/ViewControllers/DSLoginViewController.h; sourceTree = "<group>"; };
 		BFD1F3851A9DCF2100B5EA5B /* DSLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSLoginViewController.m; path = psycho/ViewControllers/DSLoginViewController.m; sourceTree = "<group>"; };
+		BFD479931A9F2DBA008F1CC4 /* DSInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSInfoViewController.h; path = psycho/ViewControllers/DSInfoViewController.h; sourceTree = "<group>"; };
+		BFD479941A9F2DBA008F1CC4 /* DSInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSInfoViewController.m; path = psycho/ViewControllers/DSInfoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -303,6 +306,8 @@
 				BFCA255C1A973D0400B1632D /* DSResultTestViewController.m */,
 				BFD1F3841A9DCF2100B5EA5B /* DSLoginViewController.h */,
 				BFD1F3851A9DCF2100B5EA5B /* DSLoginViewController.m */,
+				BFD479931A9F2DBA008F1CC4 /* DSInfoViewController.h */,
+				BFD479941A9F2DBA008F1CC4 /* DSInfoViewController.m */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -434,6 +439,7 @@
 				BFCE5F521A96004B0063E404 /* ViewController.m in Sources */,
 				BFD1F3861A9DCF2100B5EA5B /* DSLoginViewController.m in Sources */,
 				BFCA25511A973B7300B1632D /* DSSelectTestViewController.m in Sources */,
+				BFD479951A9F2DBA008F1CC4 /* DSInfoViewController.m in Sources */,
 				BFCA255D1A973D0400B1632D /* DSResultTestViewController.m in Sources */,
 				BFCA25611A97411200B1632D /* DSTestManager.m in Sources */,
 				BFCE5F4F1A96004B0063E404 /* AppDelegate.m in Sources */,

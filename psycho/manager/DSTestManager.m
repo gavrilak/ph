@@ -89,12 +89,14 @@
         case 6:
         case 7:
         case 8:
+        case 9:
+            
             result = [[self.jsonResult objectAtIndex:self.indexResult] objectForKey:@"Res2"];
             break;
-        case 9:
         case 10:
         case 11:
         case 12:
+            
             result = [[self.jsonResult objectAtIndex:self.indexResult] objectForKey:@"Res3"];
             break;
     }
