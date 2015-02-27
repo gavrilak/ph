@@ -39,6 +39,10 @@
 		BFCE25E11AA0761B0073C424 /* result1f.json in Resources */ = {isa = PBXBuildFile; fileRef = BFCE25E01AA0761B0073C424 /* result1f.json */; };
 		BFCE25E31AA089B90073C424 /* button_for_test_s@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFCE25E21AA089B90073C424 /* button_for_test_s@3x.png */; };
 		BFCE25E51AA089CF0073C424 /* backdrop@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFCE25E41AA089CF0073C424 /* backdrop@3x.png */; };
+		BFCE25EA1AA0B0D00073C424 /* man_s@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFCE25E61AA0B0D00073C424 /* man_s@3x.png */; };
+		BFCE25EB1AA0B0D00073C424 /* man@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFCE25E71AA0B0D00073C424 /* man@3x.png */; };
+		BFCE25EC1AA0B0D00073C424 /* woman_s@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFCE25E81AA0B0D00073C424 /* woman_s@3x.png */; };
+		BFCE25ED1AA0B0D00073C424 /* woman@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFCE25E91AA0B0D00073C424 /* woman@3x.png */; };
 		BFCE5F4C1A96004B0063E404 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCE5F4B1A96004B0063E404 /* main.m */; };
 		BFCE5F4F1A96004B0063E404 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCE5F4E1A96004B0063E404 /* AppDelegate.m */; };
 		BFCE5F521A96004B0063E404 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCE5F511A96004B0063E404 /* ViewController.m */; };
@@ -102,6 +106,10 @@
 		BFCE25E01AA0761B0073C424 /* result1f.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = result1f.json; path = psycho/files/result1f.json; sourceTree = "<group>"; };
 		BFCE25E21AA089B90073C424 /* button_for_test_s@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_for_test_s@3x.png"; sourceTree = "<group>"; };
 		BFCE25E41AA089CF0073C424 /* backdrop@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backdrop@3x.png"; sourceTree = "<group>"; };
+		BFCE25E61AA0B0D00073C424 /* man_s@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "man_s@3x.png"; sourceTree = "<group>"; };
+		BFCE25E71AA0B0D00073C424 /* man@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "man@3x.png"; sourceTree = "<group>"; };
+		BFCE25E81AA0B0D00073C424 /* woman_s@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "woman_s@3x.png"; sourceTree = "<group>"; };
+		BFCE25E91AA0B0D00073C424 /* woman@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "woman@3x.png"; sourceTree = "<group>"; };
 		BFCE5F461A96004B0063E404 /* psycho.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = psycho.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFCE5F4A1A96004B0063E404 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFCE5F4B1A96004B0063E404 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -192,6 +200,10 @@
 				BFCA25741A976E0D00B1632D /* button_begin_s@3x.png */,
 				BFCA25751A976E0D00B1632D /* button_fb@3x.png */,
 				BFCE25E21AA089B90073C424 /* button_for_test_s@3x.png */,
+				BFCE25E61AA0B0D00073C424 /* man_s@3x.png */,
+				BFCE25E71AA0B0D00073C424 /* man@3x.png */,
+				BFCE25E81AA0B0D00073C424 /* woman_s@3x.png */,
+				BFCE25E91AA0B0D00073C424 /* woman@3x.png */,
 				BFCA25761A976E0D00B1632D /* button_fb_s@3x.png */,
 				BFCA25771A976E0D00B1632D /* button_for_test@3x.png */,
 				BFCA25781A976E0D00B1632D /* button_s@3x.png */,
@@ -405,6 +417,9 @@
 				BFCA25871A976E0D00B1632D /* button_begin_s@3x.png in Resources */,
 				BFCA25831A976E0D00B1632D /* but_onwards@3x.png in Resources */,
 				BFCA25811A976E0D00B1632D /* but_info_big@3x.png in Resources */,
+				BFCE25EB1AA0B0D00073C424 /* man@3x.png in Resources */,
+				BFCE25EA1AA0B0D00073C424 /* man_s@3x.png in Resources */,
+				BFCE25EC1AA0B0D00073C424 /* woman_s@3x.png in Resources */,
 				BFCA258F1A976E0D00B1632D /* logo@3x.png in Resources */,
 				BFCA257F1A976E0D00B1632D /* bg@3x.png in Resources */,
 				BFCA25891A976E0D00B1632D /* button_fb_s@3x.png in Resources */,
@@ -420,6 +435,7 @@
 				BFB78B531A9DE3D300B35F5B /* button_share_s@3x.png in Resources */,
 				BFCA25851A976E0D00B1632D /* button@3x.png in Resources */,
 				BFCA25801A976E0D00B1632D /* but_info@3x.png in Resources */,
+				BFCE25ED1AA0B0D00073C424 /* woman@3x.png in Resources */,
 				BFCA258A1A976E0D00B1632D /* button_for_test@3x.png in Resources */,
 				BFCA25901A976E0D00B1632D /* separator@3x.png in Resources */,
 				BFCE25E51AA089CF0073C424 /* backdrop@3x.png in Resources */,

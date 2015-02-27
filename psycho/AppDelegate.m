@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  psycho
 //
-//  Created by Lena on 19.02.15.
+//  Created by Dima on 19.02.15.
 //  Copyright (c) 2015 bestappstudio. All rights reserved.
 //
 
@@ -18,7 +18,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [[UINavigationBar appearance] setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
-    [[UINavigationBar appearance] setShadowImage:[UIImage imageNamed:@"separator.png"]];
+    [[UINavigationBar appearance]setShadowImage:[[UIImage alloc] init]];
+    //[[UINavigationBar appearance] setShadowImage:[UIImage imageNamed:@"separator.png"]];
     return YES;
 }
 
