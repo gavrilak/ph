@@ -27,7 +27,7 @@
         self.navigationItem.hidesBackButton = NO;
     self.navigationController.navigationBar.topItem.title = @"";
      [self.navigationController.topViewController setTitle: @"Тест №1"];
-
+ //   self.testName.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"backdrop.png"]];
 }
 
 - (void)didReceiveMemoryWarning {

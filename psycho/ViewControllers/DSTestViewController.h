@@ -26,6 +26,16 @@
 
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *currentLabelLeft;
 
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *heightYesButton;
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *widthYesButton;
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *beetweenYesButton;
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *heightMaybeYesButton;
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *widthMaybeYesButton;
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *heightNoButton;
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *widthNoButton;
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *beetweenNoButton;
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *heightMaybeNoButton;
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *widthMaybeNobutton;
 
 - (IBAction)yesAction:(id)sender;
 - (IBAction)noAction:(id)sender;

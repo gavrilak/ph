@@ -29,6 +29,24 @@
     
     self.labelAllQuestion.text = [NSString stringWithFormat:@"%lu" ,(unsigned long)[[DSTestManager sharedManager].jsonQuestion count]];
     [self nextQuestion:@0];
+    
+    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone )
+    {
+        if( self.view.frame.size.height > 600 ) {   // if iphone 6
+          
+            self.heightYesButton.constant += 5;
+            self.widthYesButton.constant += 20;
+            self.heightNoButton.constant += 5;
+            self.widthNoButton.constant += 20;
+            self.heightMaybeYesButton.constant += 5;
+            self.widthMaybeYesButton.constant += 20;
+            self.heightMaybeNoButton.constant += 5;
+            self.widthMaybeNobutton.constant += 20;
+            self.beetweenYesButton.constant += 10;
+            self.beetweenNoButton.constant += 10;
+
+        }
+    }
 }
 
 - (void)didReceiveMemoryWarning {
