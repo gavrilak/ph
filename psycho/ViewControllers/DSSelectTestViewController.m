@@ -29,10 +29,18 @@
     if (self.navigationController== nil)
         NSLog(@"sfs");
     //    self navigationController  = [[UINavigationController alloc] initWithRootViewController:self];
-    
+
     self.view.backgroundColor = [UIColor colorWithPatternImage:image];
     self.navigationItem.hidesBackButton = YES;
-    [self.navigationController setNavigationBarHidden:NO animated:NO];
+    
+    //[self.navigationController setNavigationBarHidden:NO animated:NO];
+}
+
+-(void) viewWillAppear:(BOOL)animated {
+    
+    [super viewDidAppear:animated];
+       
+      self.navigationController.navigationBar.topItem.title = @"Тесты";
 }
 
 - (void)didReceiveMemoryWarning {
