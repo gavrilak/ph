@@ -10,4 +10,7 @@
 
 @interface DSLoginViewController : UIViewController
 
+- (IBAction)facebookTouched:(id)sender;
+
+
 @end

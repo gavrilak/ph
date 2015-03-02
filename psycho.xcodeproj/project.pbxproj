@@ -35,6 +35,8 @@
 		BFCA258F1A976E0D00B1632D /* logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFCA257D1A976E0D00B1632D /* logo@3x.png */; };
 		BFCA25901A976E0D00B1632D /* separator@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFCA257E1A976E0D00B1632D /* separator@3x.png */; };
 		BFCA25921A9791D000B1632D /* but_back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFCA25911A9791D000B1632D /* but_back@3x.png */; };
+		BFCB93671AA4659C000E4058 /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFCB93661AA4659C000E4058 /* logo@2x.png */; };
+		BFCB93691AA478F6000E4058 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFCB93681AA478F6000E4058 /* FacebookSDK.framework */; };
 		BFCE0C7A1A9E2F7400A9AEF3 /* UIView+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCE0C791A9E2F7400A9AEF3 /* UIView+Shake.m */; };
 		BFCE25E11AA0761B0073C424 /* result1f.json in Resources */ = {isa = PBXBuildFile; fileRef = BFCE25E01AA0761B0073C424 /* result1f.json */; };
 		BFCE25E31AA089B90073C424 /* button_for_test_s@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFCE25E21AA089B90073C424 /* button_for_test_s@3x.png */; };
@@ -101,6 +103,8 @@
 		BFCA257D1A976E0D00B1632D /* logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@3x.png"; sourceTree = "<group>"; };
 		BFCA257E1A976E0D00B1632D /* separator@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "separator@3x.png"; sourceTree = "<group>"; };
 		BFCA25911A9791D000B1632D /* but_back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "but_back@3x.png"; sourceTree = "<group>"; };
+		BFCB93661AA4659C000E4058 /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
+		BFCB93681AA478F6000E4058 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = psycho/lib/FacebookSDK.framework; sourceTree = "<group>"; };
 		BFCE0C781A9E2F7400A9AEF3 /* UIView+Shake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Shake.h"; sourceTree = "<group>"; };
 		BFCE0C791A9E2F7400A9AEF3 /* UIView+Shake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Shake.m"; sourceTree = "<group>"; };
 		BFCE25E01AA0761B0073C424 /* result1f.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = result1f.json; path = psycho/files/result1f.json; sourceTree = "<group>"; };
@@ -136,6 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFCB93691AA478F6000E4058 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +157,7 @@
 		BFCA25371A97365100B1632D /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				BFCB93681AA478F6000E4058 /* FacebookSDK.framework */,
 			);
 			name = lib;
 			sourceTree = "<group>";
@@ -215,6 +221,7 @@
 		BFCA25791A976E0D00B1632D /* other */ = {
 			isa = PBXGroup;
 			children = (
+				BFCB93661AA4659C000E4058 /* logo@2x.png */,
 				BFCE25E41AA089CF0073C424 /* backdrop@3x.png */,
 				BFCA257A1A976E0D00B1632D /* frame@3x.png */,
 				BFCA257B1A976E0D00B1632D /* frame_small@3x.png */,
@@ -438,6 +445,7 @@
 				BFCE25ED1AA0B0D00073C424 /* woman@3x.png in Resources */,
 				BFCA258A1A976E0D00B1632D /* button_for_test@3x.png in Resources */,
 				BFCA25901A976E0D00B1632D /* separator@3x.png in Resources */,
+				BFCB93671AA4659C000E4058 /* logo@2x.png in Resources */,
 				BFCE25E51AA089CF0073C424 /* backdrop@3x.png in Resources */,
 				BFCA258B1A976E0D00B1632D /* button_s@3x.png in Resources */,
 				BFCE25E31AA089B90073C424 /* button_for_test_s@3x.png in Resources */,
@@ -602,9 +610,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/psycho/lib",
+				);
 				INFOPLIST_FILE = psycho/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -613,9 +626,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/psycho/lib",
+				);
 				INFOPLIST_FILE = psycho/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
