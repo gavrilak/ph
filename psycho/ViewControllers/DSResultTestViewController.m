@@ -7,6 +7,7 @@
 //
 
 #import "DSResultTestViewController.h"
+#import "DSShareViewController.h"
 #import "DSTestManager.h"
 #import "UIView+Shake.h"
 
@@ -59,10 +60,23 @@
     [self.view addSubview:activityView];
     dispatch_queue_t queue = dispatch_queue_create("openActivityIndicatorQueue", NULL);
     
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    DSShareViewController *shareViewController = [sb instantiateViewControllerWithIdentifier:@"share"];
+
+    shareViewController.view.frame = CGRectMake(0, 0,600, 500);
+    [shareViewController viewDidLoad];
+    
+    UIGraphicsBeginImageContext(shareViewController.view.frame.size);
+    [[shareViewController.view layer] renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *screenshot = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+
+    
     // send initialization of UIActivityViewController in background
     dispatch_async(queue, ^{
+        
         UIActivityViewController *activityViewController = [[UIActivityViewController alloc]
-                                                            initWithActivityItems:@[[NSString stringWithFormat:@"Личный психолог! itunes.apple.com/ru/artist/bestapp-studio-ltd./id739061892?l=ru"]] applicationActivities:nil];
+                                                            initWithActivityItems:@[[NSString stringWithFormat:@"Личный психолог! itunes.apple.com/ru/artist/bestapp-studio-ltd./id739061892?l=ru"],screenshot] applicationActivities:nil];
         activityViewController.excludedActivityTypes=@[UIActivityTypeCopyToPasteboard,UIActivityTypeAssignToContact,UIActivityTypePostToWeibo,UIActivityTypePrint,UIActivityTypeSaveToCameraRoll];
         
         dispatch_async(dispatch_get_main_queue(), ^{

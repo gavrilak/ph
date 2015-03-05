@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		3202F10D1A993C8600B59662 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3202F10C1A993C8600B59662 /* Entitlements.plist */; };
-		BF1B49591AA71C8D00F1467A /* but_back~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = BF1B49561AA71C8D00F1467A /* but_back~ipad.png */; };
-		BF1B495A1AA71C8D00F1467A /* button_share_s~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = BF1B49571AA71C8D00F1467A /* button_share_s~ipad.png */; };
-		BF1B495B1AA71C8D00F1467A /* button_share~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = BF1B49581AA71C8D00F1467A /* button_share~ipad.png */; };
-		BF1B495E1AA71DFF00F1467A /* button_fb_s~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = BF1B495C1AA71DFF00F1467A /* button_fb_s~ipad.png */; };
-		BF1B495F1AA71DFF00F1467A /* button_fb~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = BF1B495D1AA71DFF00F1467A /* button_fb~ipad.png */; };
+		BF1B49591AA71C8D00F1467A /* but_back@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = BF1B49561AA71C8D00F1467A /* but_back@2x~ipad.png */; };
+		BF1B495A1AA71C8D00F1467A /* button_share_s@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = BF1B49571AA71C8D00F1467A /* button_share_s@2x~ipad.png */; };
+		BF1B495B1AA71C8D00F1467A /* button_share@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = BF1B49581AA71C8D00F1467A /* button_share@2x~ipad.png */; };
+		BF1B495E1AA71DFF00F1467A /* button_fb_s@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = BF1B495C1AA71DFF00F1467A /* button_fb_s@2x~ipad.png */; };
+		BF1B495F1AA71DFF00F1467A /* button_fb@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = BF1B495D1AA71DFF00F1467A /* button_fb@2x~ipad.png */; };
+		BF80483E1AA87FAA000E7390 /* DSShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF80483D1AA87FAA000E7390 /* DSShareViewController.m */; };
 		BFB78B531A9DE3D300B35F5B /* button_share_s@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFB78B511A9DE3D300B35F5B /* button_share_s@3x.png */; };
 		BFB78B541A9DE3D300B35F5B /* button_share@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFB78B521A9DE3D300B35F5B /* button_share@3x.png */; };
 		BFCA25511A973B7300B1632D /* DSSelectTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCA25501A973B7300B1632D /* DSSelectTestViewController.m */; };
@@ -75,11 +76,13 @@
 
 /* Begin PBXFileReference section */
 		3202F10C1A993C8600B59662 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
-		BF1B49561AA71C8D00F1467A /* but_back~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "but_back~ipad.png"; sourceTree = "<group>"; };
-		BF1B49571AA71C8D00F1467A /* button_share_s~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_share_s~ipad.png"; sourceTree = "<group>"; };
-		BF1B49581AA71C8D00F1467A /* button_share~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_share~ipad.png"; sourceTree = "<group>"; };
-		BF1B495C1AA71DFF00F1467A /* button_fb_s~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_fb_s~ipad.png"; sourceTree = "<group>"; };
-		BF1B495D1AA71DFF00F1467A /* button_fb~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_fb~ipad.png"; sourceTree = "<group>"; };
+		BF1B49561AA71C8D00F1467A /* but_back@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "but_back@2x~ipad.png"; sourceTree = "<group>"; };
+		BF1B49571AA71C8D00F1467A /* button_share_s@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_share_s@2x~ipad.png"; sourceTree = "<group>"; };
+		BF1B49581AA71C8D00F1467A /* button_share@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_share@2x~ipad.png"; sourceTree = "<group>"; };
+		BF1B495C1AA71DFF00F1467A /* button_fb_s@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_fb_s@2x~ipad.png"; sourceTree = "<group>"; };
+		BF1B495D1AA71DFF00F1467A /* button_fb@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_fb@2x~ipad.png"; sourceTree = "<group>"; };
+		BF80483C1AA87FAA000E7390 /* DSShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSShareViewController.h; path = psycho/ViewControllers/DSShareViewController.h; sourceTree = "<group>"; };
+		BF80483D1AA87FAA000E7390 /* DSShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSShareViewController.m; path = psycho/ViewControllers/DSShareViewController.m; sourceTree = "<group>"; };
 		BFB78B511A9DE3D300B35F5B /* button_share_s@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_share_s@3x.png"; sourceTree = "<group>"; };
 		BFB78B521A9DE3D300B35F5B /* button_share@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_share@3x.png"; sourceTree = "<group>"; };
 		BFCA254F1A973B7300B1632D /* DSSelectTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSSelectTestViewController.h; path = psycho/ViewControllers/DSSelectTestViewController.h; sourceTree = "<group>"; };
@@ -203,11 +206,11 @@
 		BFCA256C1A976E0D00B1632D /* buttons */ = {
 			isa = PBXGroup;
 			children = (
-				BF1B49561AA71C8D00F1467A /* but_back~ipad.png */,
-				BF1B49571AA71C8D00F1467A /* button_share_s~ipad.png */,
-				BF1B495C1AA71DFF00F1467A /* button_fb_s~ipad.png */,
-				BF1B495D1AA71DFF00F1467A /* button_fb~ipad.png */,
-				BF1B49581AA71C8D00F1467A /* button_share~ipad.png */,
+				BF1B49561AA71C8D00F1467A /* but_back@2x~ipad.png */,
+				BF1B49571AA71C8D00F1467A /* button_share_s@2x~ipad.png */,
+				BF1B495C1AA71DFF00F1467A /* button_fb_s@2x~ipad.png */,
+				BF1B495D1AA71DFF00F1467A /* button_fb@2x~ipad.png */,
+				BF1B49581AA71C8D00F1467A /* button_share@2x~ipad.png */,
 				BFB78B511A9DE3D300B35F5B /* button_share_s@3x.png */,
 				BFB78B521A9DE3D300B35F5B /* button_share@3x.png */,
 				BFCA25911A9791D000B1632D /* but_back@3x.png */,
@@ -351,6 +354,8 @@
 				BFD1F3851A9DCF2100B5EA5B /* DSLoginViewController.m */,
 				BFD479931A9F2DBA008F1CC4 /* DSInfoViewController.h */,
 				BFD479941A9F2DBA008F1CC4 /* DSInfoViewController.m */,
+				BF80483C1AA87FAA000E7390 /* DSShareViewController.h */,
+				BF80483D1AA87FAA000E7390 /* DSShareViewController.m */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -447,7 +452,7 @@
 				BFCA25891A976E0D00B1632D /* button_fb_s@3x.png in Resources */,
 				BFCA258C1A976E0D00B1632D /* frame@3x.png in Resources */,
 				BFCA25921A9791D000B1632D /* but_back@3x.png in Resources */,
-				BF1B495F1AA71DFF00F1467A /* button_fb~ipad.png in Resources */,
+				BF1B495F1AA71DFF00F1467A /* button_fb@2x~ipad.png in Resources */,
 				BFCA25861A976E0D00B1632D /* button_begin@3x.png in Resources */,
 				BFCA258E1A976E0D00B1632D /* indicator@3x.png in Resources */,
 				BFCE5F721A9643BA0063E404 /* result1m.json in Resources */,
@@ -455,23 +460,23 @@
 				BFCA25821A976E0D00B1632D /* but_info_big_s@3x.png in Resources */,
 				BFCE5F551A96004B0063E404 /* Main.storyboard in Resources */,
 				BFCA258D1A976E0D00B1632D /* frame_small@3x.png in Resources */,
-				BF1B495E1AA71DFF00F1467A /* button_fb_s~ipad.png in Resources */,
+				BF1B495E1AA71DFF00F1467A /* button_fb_s@2x~ipad.png in Resources */,
 				BFB78B531A9DE3D300B35F5B /* button_share_s@3x.png in Resources */,
 				BFCA25851A976E0D00B1632D /* button@3x.png in Resources */,
-				BF1B495A1AA71C8D00F1467A /* button_share_s~ipad.png in Resources */,
+				BF1B495A1AA71C8D00F1467A /* button_share_s@2x~ipad.png in Resources */,
 				BFCA25801A976E0D00B1632D /* but_info@3x.png in Resources */,
 				BFCE25ED1AA0B0D00073C424 /* woman@3x.png in Resources */,
 				BFCA258A1A976E0D00B1632D /* button_for_test@3x.png in Resources */,
 				BFCA25901A976E0D00B1632D /* separator@3x.png in Resources */,
 				BFCB93671AA4659C000E4058 /* logo@2x.png in Resources */,
 				BFCE25E51AA089CF0073C424 /* backdrop@3x.png in Resources */,
-				BF1B49591AA71C8D00F1467A /* but_back~ipad.png in Resources */,
+				BF1B49591AA71C8D00F1467A /* but_back@2x~ipad.png in Resources */,
 				BFCA258B1A976E0D00B1632D /* button_s@3x.png in Resources */,
 				BFCE25E31AA089B90073C424 /* button_for_test_s@3x.png in Resources */,
 				BFCE5F5A1A96004B0063E404 /* LaunchScreen.xib in Resources */,
 				BFCE5F731A9643BA0063E404 /* test1.json in Resources */,
 				BFCA25881A976E0D00B1632D /* button_fb@3x.png in Resources */,
-				BF1B495B1AA71C8D00F1467A /* button_share~ipad.png in Resources */,
+				BF1B495B1AA71C8D00F1467A /* button_share@2x~ipad.png in Resources */,
 				3202F10D1A993C8600B59662 /* Entitlements.plist in Resources */,
 				BFCE5F571A96004B0063E404 /* Images.xcassets in Resources */,
 				BFCE25E11AA0761B0073C424 /* result1f.json in Resources */,
@@ -498,6 +503,7 @@
 				BFD479951A9F2DBA008F1CC4 /* DSInfoViewController.m in Sources */,
 				BFCA255D1A973D0400B1632D /* DSResultTestViewController.m in Sources */,
 				BFCA25611A97411200B1632D /* DSTestManager.m in Sources */,
+				BF80483E1AA87FAA000E7390 /* DSShareViewController.m in Sources */,
 				BFCE5F4F1A96004B0063E404 /* AppDelegate.m in Sources */,
 				BFCA255A1A973CE700B1632D /* DSTestViewController.m in Sources */,
 				BFCE0C7A1A9E2F7400A9AEF3 /* UIView+Shake.m in Sources */,

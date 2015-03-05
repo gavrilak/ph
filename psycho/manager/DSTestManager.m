@@ -36,7 +36,7 @@
     self.indexResult = 0;
     NSLog(@"%d",[self.jsonQuestion count] );
     self.resultArray = [NSMutableArray array];
-    //[  self.jsonQuestion removeObjectsInRange:NSMakeRange(15, 69) ];
+   // [  self.jsonQuestion removeObjectsInRange:NSMakeRange(15, 69) ];
 }
 
 
