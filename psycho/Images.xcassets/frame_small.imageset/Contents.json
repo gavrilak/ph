@@ -1,0 +1,18 @@
+{
+  "images" : [
+    {
+      "idiom" : "iphone",
+      "scale" : "3x",
+      "filename" : "frame_small@3x.png"
+    },
+    {
+      "idiom" : "ipad",
+      "scale" : "2x",
+      "filename" : "frame_small@2x~ipad.png"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}
