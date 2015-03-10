@@ -27,7 +27,7 @@
     UIGraphicsEndImageContext();
 
     self.view.backgroundColor = [UIColor colorWithPatternImage:image];
-    self.navigationItem.rightBarButtonItem  = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"but_info.png"] style:UIBarButtonItemStylePlain target:self action: @selector(info)];
+   // self.navigationItem.rightBarButtonItem  = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"but_info.png"] style:UIBarButtonItemStylePlain target:self action: @selector(info)];
 }
 
 - (void)didReceiveMemoryWarning {

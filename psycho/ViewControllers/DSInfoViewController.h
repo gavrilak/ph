@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DSInfoViewController : UIViewController
+@interface DSInfoViewController : UIViewController <UITableViewDataSource , UITableViewDelegate >
 
 
 - (IBAction)backAction:(id)sender;
+
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) IBOutlet UIButton *buttonBack;
 
 @end
