@@ -12,11 +12,11 @@
 
 @protocol MKStoreKitDelegate <NSObject>
 @optional
-- (void)product1Purchased;
 - (void)product2Purchased;
 - (void)product3Purchased;
 - (void)product4Purchased;
 - (void)product5Purchased;
+- (void)product6Purchased;
 - (void)failed;
 @end
 
@@ -34,11 +34,11 @@
 
 - (void) requestProductData;
 
-- (void) buyFeature1;
 - (void) buyFeature2;
 - (void) buyFeature3;
 - (void) buyFeature4;
 - (void) buyFeature5;
+- (void) buyFeature6;
 
 // do not call this directly. This is like a private method
 - (void) buyFeature:(NSString*) featureId;
@@ -50,11 +50,11 @@
 
 + (MKStoreManager*)sharedManager;
 
-+ (BOOL) feature1Purchased;
 + (BOOL) feature2Purchased;
 + (BOOL) feature3Purchased;
 + (BOOL) feature4Purchased;
 + (BOOL) feature5Purchased;
++ (BOOL) feature6Purchased;
 
 +(void) loadPurchases;
 +(void) updatePurchases;

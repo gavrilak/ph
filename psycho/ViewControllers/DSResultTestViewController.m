@@ -10,6 +10,7 @@
 #import "DSShareViewController.h"
 #import "DSTestManager.h"
 #import "UIView+Shake.h"
+#import "AppDelegate.h"
 
 @interface DSResultTestViewController ()
 
@@ -25,8 +26,12 @@
     [[UIImage imageNamed:@"bg.png"] drawInRect:self.view.bounds];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
-    
     self.view.backgroundColor = [UIColor colorWithPatternImage:image];
+    
+    self.appLikeControl.likeControlStyle = FBLikeControlStyleButton;
+    self.appLikeControl.objectID = @"https://www.facebook.com/pages/Top50Ringtones/431758676974661";
+    
+    
     [self getText];
 }
 

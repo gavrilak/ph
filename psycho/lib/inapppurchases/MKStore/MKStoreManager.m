@@ -9,6 +9,7 @@
 #import "MKStoreManager.h"
 #import "AppDelegate.h"
 
+
 @implementation MKStoreManager
 
 @synthesize purchasableObjects;
@@ -27,6 +28,7 @@ BOOL feature2Purchased;
 BOOL feature3Purchased;
 BOOL feature4Purchased;
 BOOL feature5Purchased;
+BOOL feature6Purchased;
 
 static MKStoreManager* _sharedStoreManager; // self
 
@@ -37,15 +39,11 @@ static MKStoreManager* _sharedStoreManager; // self
 	[super dealloc];
 }
 
-+ (BOOL) feature1Purchased {
-	
-	return feature1Purchased;
-}
-
 + (BOOL) feature2Purchased {
 	
 	return feature2Purchased;
 }
+
 + (BOOL) feature3Purchased {
 	
 	return feature3Purchased;
@@ -57,6 +55,10 @@ static MKStoreManager* _sharedStoreManager; // self
 + (BOOL) feature5Purchased {
 	
 	return feature5Purchased;
+}
++ (BOOL) feature6Purchased {
+	
+	return feature6Purchased;
 }
 
 + (MKStoreManager*)sharedManager
@@ -125,7 +127,7 @@ static MKStoreManager* _sharedStoreManager; // self
 - (void) requestProductData
 {
 	SKProductsRequest *request= [[SKProductsRequest alloc] initWithProductIdentifiers: 
-								 [NSSet setWithObjects: featureEngID, featureRusID,  nil]]; // add any other product here
+								 [NSSet setWithObjects: featureTest2, featureTest3, featureTest4, featureTest5, featureTest6,  nil]]; // add any other product here
 	request.delegate = self;
 	[request start];
 }
@@ -146,13 +148,26 @@ static MKStoreManager* _sharedStoreManager; // self
 	[request autorelease];
 }
 
-- (void) buyFeature1
-{
-	[self buyFeature:featureEngID];
-}
 - (void) buyFeature2
 {
-	[self buyFeature:featureRusID];
+	[self buyFeature:featureTest2];
+}
+- (void) buyFeature3
+{
+	[self buyFeature:featureTest3];
+}
+
+- (void) buyFeature4
+{
+    [self buyFeature:featureTest4];
+}
+- (void) buyFeature5
+{
+    [self buyFeature:featureTest5];
+}
+- (void) buyFeature6
+{
+    [self buyFeature:featureTest6];
 }
 
 
@@ -194,17 +209,32 @@ static MKStoreManager* _sharedStoreManager; // self
 
 -(void) provideContent: (NSString*) productIdentifier
 {
-	if([productIdentifier isEqualToString:featureEngID])
-	{
-		feature1Purchased = YES;
-		if([delegate respondsToSelector:@selector(product1Purchased)])
-			[delegate product1Purchased];
-	} else if([productIdentifier isEqualToString:featureRusID])
+	if([productIdentifier isEqualToString:featureTest2])
 	{
 		feature2Purchased = YES;
 		if([delegate respondsToSelector:@selector(product2Purchased)])
 			[delegate product2Purchased];
-	}
+	} else if([productIdentifier isEqualToString:featureTest3])
+	{
+		feature3Purchased = YES;
+		if([delegate respondsToSelector:@selector(product3Purchased)])
+			[delegate product3Purchased];
+    } else if([productIdentifier isEqualToString:featureTest4])
+    {
+        feature4Purchased = YES;
+        if([delegate respondsToSelector:@selector(product4Purchased)])
+            [delegate product4Purchased];
+    } else if([productIdentifier isEqualToString:featureTest5])
+    {
+        feature5Purchased = YES;
+        if([delegate respondsToSelector:@selector(product5Purchased)])
+            [delegate product5Purchased];
+    } else if([productIdentifier isEqualToString:featureTest6])
+    {
+        feature6Purchased = YES;
+        if([delegate respondsToSelector:@selector(product6Purchased)])
+            [delegate product6Purchased];
+    }
 	
 	[MKStoreManager updatePurchases];
 }
@@ -213,8 +243,11 @@ static MKStoreManager* _sharedStoreManager; // self
 +(void) loadPurchases 
 {
 	NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];	
-	feature1Purchased = [userDefaults boolForKey:featureEngID];
-	feature2Purchased = [userDefaults boolForKey:featureRusID];
+	feature2Purchased = [userDefaults boolForKey:featureTest2];
+	feature3Purchased = [userDefaults boolForKey:featureTest3];
+    feature4Purchased = [userDefaults boolForKey:featureTest4];
+    feature5Purchased = [userDefaults boolForKey:featureTest5];
+    feature6Purchased = [userDefaults boolForKey:featureTest6];
 
 }
 
@@ -222,9 +255,10 @@ static MKStoreManager* _sharedStoreManager; // self
 +(void) updatePurchases
 {
 	NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    feature1Purchased = [userDefaults boolForKey:featureEngID];
-    feature2Purchased = [userDefaults boolForKey:featureRusID];
-
-
+    feature2Purchased = [userDefaults boolForKey:featureTest2];
+    feature3Purchased = [userDefaults boolForKey:featureTest3];
+    feature4Purchased = [userDefaults boolForKey:featureTest4];
+    feature5Purchased = [userDefaults boolForKey:featureTest5];
+    feature6Purchased = [userDefaults boolForKey:featureTest6];
 }
 @end

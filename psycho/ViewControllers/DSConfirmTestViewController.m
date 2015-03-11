@@ -7,6 +7,7 @@
 //
 
 #import "DSConfirmTestViewController.h"
+#import "AppDelegate.h"
 
 @interface DSConfirmTestViewController ()
 
@@ -22,11 +23,17 @@
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
+    FBLikeControl* appLikeControl = [[FBLikeControl alloc] init];
+    appLikeControl.likeControlStyle = FBLikeControlStyleButton;
+     appLikeControl.likeControlAuxiliaryPosition =  FBLikeControlAuxiliaryPositionTop;
+    appLikeControl.objectID = @"https://www.facebook.com/pages/Top50Ringtones/431758676974661";
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:appLikeControl];
+   
 
     self.view.backgroundColor = [UIColor colorWithPatternImage:image];
-        self.navigationItem.hidesBackButton = NO;
+    self.navigationItem.hidesBackButton = NO;
     self.navigationController.navigationBar.topItem.title = @"";
-     [self.navigationController.topViewController setTitle: @"Тест №1"];
+    [self.navigationController.topViewController setTitle: @"Тест №1"];
  //   self.testName.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"backdrop.png"]];
 }
 

@@ -8,13 +8,9 @@
 
 #import "DSSelectTestViewController.h"
 #import "DSTestManager.h"
+#import "AppDelegate.h"
 
 
-static NSString *featureTest2 = @"com.bestappstudio.PsychoTest2";
-static NSString *featureTest3 = @"com.bestappstudio.PsychoTest3";
-static NSString *featureTest4 = @"com.bestappstudio.PsychoTest4";
-static NSString *featureTest5 = @"com.bestappstudio.PsychoTest5";
-static NSString *featureTest6 = @"com.bestappstudio.PsychoTest6";
 
 @interface DSSelectTestViewController ()
     
@@ -31,11 +27,12 @@ static NSString *featureTest6 = @"com.bestappstudio.PsychoTest6";
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
+    FBLikeControl* appLikeControl = [[FBLikeControl alloc] init];
+    appLikeControl.likeControlStyle = FBLikeControlStyleButton;
+    appLikeControl.likeControlAuxiliaryPosition =  FBLikeControlAuxiliaryPositionTop;
+    appLikeControl.objectID = @"https://www.facebook.com/pages/Top50Ringtones/431758676974661";
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:appLikeControl];
     
-    if (self.navigationController== nil)
-        NSLog(@"sfs");
-    //    self navigationController  = [[UINavigationController alloc] initWithRootViewController:self];
-
     self.view.backgroundColor = [UIColor colorWithPatternImage:image];
     self.navigationItem.hidesBackButton = YES;
     

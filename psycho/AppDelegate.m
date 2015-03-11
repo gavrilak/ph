@@ -25,6 +25,11 @@
     // Override point for customization after application launch.
     [[UINavigationBar appearance] setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
     [[UINavigationBar appearance]setShadowImage:[[UIImage alloc] init]];
+    
+    UIEdgeInsets insets = UIEdgeInsetsMake(50, 50, 0, 0); // or (0, 0, -10.0, 0)
+    UIImage *alignedImage = [[UIImage imageNamed:@"but_back.png"] imageWithAlignmentRectInsets:insets];
+    [[UINavigationBar appearance] setBackIndicatorImage:alignedImage];
+    [[UINavigationBar appearance] setBackIndicatorTransitionMaskImage:alignedImage];
     // Whenever a person opens app, check for a cached session
   /*  if (FBSession.activeSession.state == FBSessionStateCreatedTokenLoaded) {
         

@@ -8,6 +8,7 @@
 
 #import "DSSelectSexViewController.h"
 #import "DSTestManager.h"
+#import "AppDelegate.h"
 
 @interface DSSelectSexViewController ()
 
@@ -23,9 +24,15 @@
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
+    FBLikeControl* appLikeControl = [[FBLikeControl alloc] init];
+    appLikeControl.likeControlStyle = FBLikeControlStyleButton;
+     appLikeControl.likeControlAuxiliaryPosition =  FBLikeControlAuxiliaryPositionTop;
+    appLikeControl.objectID = @"https://www.facebook.com/pages/Top50Ringtones/431758676974661";
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:appLikeControl];
+    
     self.view.backgroundColor = [UIColor colorWithPatternImage:image];
     self.navigationController.navigationBar.topItem.title = @"";
-    [self.navigationController.topViewController setTitle: @"info"];
+    [self.navigationController.topViewController setTitle: @""];
 
 }
 

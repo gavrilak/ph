@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppDelegate.h"
 
 @interface DSResultTestViewController : UIViewController
 
@@ -17,6 +18,7 @@
 @property (strong, nonatomic) IBOutlet UIButton *forward;
 @property (strong, nonatomic) IBOutlet UIButton *share;
 
+@property (nonatomic, strong) IBOutlet FBLikeControl *appLikeControl;
 
 - (IBAction)backAction:(id)sender;
 - (IBAction)forwardAction:(id)sender;

@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppDelegate.h"
 
 @interface DSTestViewController : UIViewController
+
+
 
 
 @property (strong, nonatomic) IBOutlet UIButton *back;
@@ -23,7 +26,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *labelCurent;
 @property (strong, nonatomic) IBOutlet UIProgressView *progress;
 
-
+@property (nonatomic, strong) IBOutlet FBLikeControl *appLikeControl;
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *currentLabelLeft;
 
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *heightYesButton;
